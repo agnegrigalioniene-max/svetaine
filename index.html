@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noimageindex">
+<title>Millennial Medical Crutches EU</title>
+<meta name="description" content="Concept page for EU distribution of Millennial Medical crutches: in-Motion Pro underarm and forearm, Youth and Standard A-Frame. Sizes in cm and kg.">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/Jost-var.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/Marcellus-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="icons/phosphor.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#catalog">Skip to crutches</a>
+
+<p class="concept">Concept page, not affiliated with or endorsed by Millennial Medical. Nothing on this page is sent or sold.</p>
+
+<header class="top">
+  <div class="top__inner">
+    <a class="brand" href="#top" aria-label="Back to top">
+      <span class="brand__name">Millennial Medical</span>
+      <span class="brand__sub">crutches for the EU</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#catalog">Crutches</a>
+      <a href="#fit">Size guide</a>
+      <a href="#specs">Specifications</a>
+      <a href="#trade">Trade</a>
+    </nav>
+    <button class="cart-btn" type="button" id="cartOpen" aria-label="Open cart">
+      <i class="ph ph-bag-simple" aria-hidden="true"></i>
+      <span>Cart</span>
+      <span class="cart-btn__count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero: one statement, one photo, one action -->
+  <section class="hero">
+    <div class="hero__text">
+      <h1>Crutches built around a natural wrist position</h1>
+      <p class="hero__lead">Contoured left and right grips, spring assist and pivoting tips. Developed through 34 clinical studies.</p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="#catalog">Choose crutches</a>
+        <a class="btn btn--line" href="#fit">Find your size</a>
+      </div>
+    </div>
+    <figure class="hero__photo">
+      <img src="img/forearm-crutches-woman-hiking-zion.webp" alt="A woman walking a canyon trail on in-Motion Pro forearm crutches" width="768" height="1255" fetchpriority="high">
+    </figure>
+  </section>
+
+  <!-- Four features: asymmetric grid, photo in every cell -->
+  <section class="features" aria-labelledby="features-h">
+    <h2 id="features-h" class="section-h">What makes the in-Motion Pro different</h2>
+    <div class="features__grid">
+      <article class="feat feat--grip">
+        <img src="img/forearm-crutch-top-half-1.webp" alt="Close-up of the contoured in-Motion Pro hand grip and forearm cuff" loading="lazy" width="1400" height="1400">
+        <div class="feat__body">
+          <h3>Grips angled for your wrist</h3>
+          <p>Left and right grips keep the wrist in its natural position, removing the bend that causes wrist pain and nerve strain. Most users adjust within the first day.</p>
+        </div>
+      </article>
+      <article class="feat feat--spring">
+        <img src="img/forearm-hiking-in-utah-with-dog.webp" alt="A woman on forearm crutches walking a desert path with her dog" loading="lazy" width="880" height="1078">
+        <div class="feat__body">
+          <h3>Spring assist</h3>
+          <p>A spring in the lower post absorbs each step and returns the energy forward. Firm and controlled, not bouncy, and quieter than traditional crutch springs.</p>
+        </div>
+      </article>
+      <article class="feat feat--tips">
+        <img src="img/boots-and-crutches-up-close-scaled.jpg" alt="Articulating crutch tips on rough ground next to hiking boots" loading="lazy" width="1400" height="934">
+        <div class="feat__body">
+          <h3>Tips that pivot</h3>
+          <p>Sure Foot tips stay in full contact with the ground at any angle: hardwood, carpet, grass, gravel and uneven ground.</p>
+        </div>
+      </article>
+      <article class="feat feat--fold">
+        <img src="img/02-millennial-medical-laynie-underarm-showing-folding-capability-no-pads-2000x2000-1.webp" alt="Underarm crutch shown folded in half next to a user" loading="lazy" width="1400" height="1400">
+        <div class="feat__body">
+          <h3>Folds in half</h3>
+          <p>The underarm crutch folds without changing your height settings and fits an overhead bin, a car back seat or a closet.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Catalog -->
+  <section class="catalog" id="catalog" aria-labelledby="catalog-h">
+    <div class="catalog__head">
+      <h2 id="catalog-h" class="section-h">All crutches</h2>
+      <div class="chips" role="group" aria-label="Filter by type" id="chips"></div>
+    </div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+    <p class="price-note">Prices are US list prices from crutches.com. EU prices in euro are not set yet.</p>
+  </section>
+
+  <!-- Fit ruler: the signature interaction -->
+  <section class="fit" id="fit" aria-labelledby="fit-h">
+    <div class="fit__intro">
+      <h2 id="fit-h" class="section-h">Find your size</h2>
+      <p>Set your height. The ruler shows which models and sizes fit. Height is a starting point: confirm by measuring in the shoes you normally wear.</p>
+      <div class="fit__control">
+        <label for="height">Your height</label>
+        <div class="fit__value"><output id="heightOut" for="height">170</output> cm</div>
+        <input type="range" id="height" min="120" max="220" step="1" value="170">
+      </div>
+      <dl class="measure">
+        <div>
+          <dt>Underarm crutches</dt>
+          <dd>Measure from the floor to your underarm.</dd>
+        </div>
+        <div>
+          <dt>Forearm crutches</dt>
+          <dd>Measure from the floor to your hip. Sizing is based on handle height, not body height.</dd>
+        </div>
+      </dl>
+    </div>
+    <div class="ruler" id="ruler">
+      <div class="ruler__scale" id="rulerScale" aria-hidden="true"></div>
+      <div class="ruler__rows" id="rulerRows"></div>
+      <div class="ruler__marker" id="rulerMarker" aria-hidden="true"></div>
+    </div>
+    <p class="fit__result" id="fitResult" aria-live="polite"></p>
+  </section>
+
+  <!-- Specifications -->
+  <section class="specs" id="specs" aria-labelledby="specs-h">
+    <h2 id="specs-h" class="section-h">Specifications</h2>
+    <div class="specs__wrap">
+      <table class="specs__table" id="specsTable"></table>
+    </div>
+    <div class="specs__cards" id="specsCards"></div>
+    <p class="price-note">Converted from the manufacturer's inches and pounds. Warranty terms are the US terms.</p>
+  </section>
+
+  <!-- Trade / representation -->
+  <section class="trade" id="trade" aria-labelledby="trade-h">
+    <div class="trade__text">
+      <h2 id="trade-h" class="section-h">For pharmacies, clinics and distributors</h2>
+      <p>This page is a concept for EU distribution of Millennial Medical crutches. EU prices, CE documentation and delivery terms are not set yet.</p>
+      <p>Send the models and quantities you are interested in, and the terms you need for your country.</p>
+    </div>
+    <form class="form" id="tradeForm" novalidate>
+      <div class="field">
+        <label for="f-org">Organisation</label>
+        <input id="f-org" name="org" type="text" autocomplete="organization" required>
+        <p class="field__err" id="e-org"></p>
+      </div>
+      <div class="field field--half">
+        <label for="f-type">Type</label>
+        <select id="f-type" name="type" required>
+          <option value="">Choose</option>
+          <option>Pharmacy</option>
+          <option>Clinic or hospital</option>
+          <option>Rehabilitation centre</option>
+          <option>Distributor or retailer</option>
+          <option>Manufacturer</option>
+        </select>
+        <p class="field__err" id="e-type"></p>
+      </div>
+      <div class="field field--half">
+        <label for="f-country">Country</label>
+        <select id="f-country" name="country" required></select>
+        <p class="field__err" id="e-country"></p>
+      </div>
+      <div class="field">
+        <label for="f-email">Email</label>
+        <input id="f-email" name="email" type="email" autocomplete="email" required>
+        <p class="field__err" id="e-email"></p>
+      </div>
+      <fieldset class="field">
+        <legend>Models of interest</legend>
+        <div class="checks" id="f-models"></div>
+      </fieldset>
+      <div class="field">
+        <label for="f-msg">Quantities and questions</label>
+        <textarea id="f-msg" name="msg" rows="4"></textarea>
+        <p class="field__help">For example: 20 pairs of Underarm Tall per month.</p>
+      </div>
+      <button class="btn btn--solid" type="submit">Send inquiry</button>
+      <p class="form__done" id="tradeDone" hidden></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot__brand">Millennial Medical crutches for the EU</p>
+  <p class="foot__note">Concept page, not affiliated with or endorsed by Millennial Medical. Product names, descriptions and photos are from crutches.com. Nothing on this page is sent anywhere: orders and inquiries stay in your browser.</p>
+</footer>
+
+<!-- Product dialog -->
+<dialog class="pd" id="pd" aria-labelledby="pdTitle">
+  <button class="icon-btn pd__close" type="button" data-close aria-label="Close"><i class="ph ph-x" aria-hidden="true"></i></button>
+  <div class="pd__inner">
+    <div class="pd__gallery">
+      <div class="pd__main"><img id="pdMain" src="" alt=""></div>
+      <div class="pd__thumbs" id="pdThumbs"></div>
+    </div>
+    <div class="pd__info">
+      <p class="pd__variant" id="pdVariant"></p>
+      <h2 id="pdTitle"></h2>
+      <p class="pd__price" id="pdPrice"></p>
+      <p class="pd__summary" id="pdSummary"></p>
+      <form id="pdForm">
+        <fieldset class="sizes" id="pdSizes"></fieldset>
+        <p class="pd__fit" id="pdFit"></p>
+        <div class="pd__buy">
+          <div class="qty">
+            <button type="button" class="icon-btn" id="qtyMinus" aria-label="Fewer pairs"><i class="ph ph-minus" aria-hidden="true"></i></button>
+            <output id="qty">1</output>
+            <button type="button" class="icon-btn" id="qtyPlus" aria-label="More pairs"><i class="ph ph-plus" aria-hidden="true"></i></button>
+          </div>
+          <button class="btn btn--solid" type="submit">Add to cart</button>
+        </div>
+        <p class="field__err" id="pdErr"></p>
+      </form>
+      <ul class="pd__points" id="pdPoints"></ul>
+      <p class="pd__note" id="pdNote"></p>
+    </div>
+  </div>
+</dialog>
+
+<!-- Cart drawer -->
+<dialog class="cart" id="cart" aria-labelledby="cartTitle">
+  <div class="cart__head">
+    <h2 id="cartTitle">Cart</h2>
+    <button class="icon-btn" type="button" data-close aria-label="Close cart"><i class="ph ph-x" aria-hidden="true"></i></button>
+  </div>
+  <div class="cart__body" id="cartBody"></div>
+  <div class="cart__foot" id="cartFoot">
+    <p class="cart__total"><span>Subtotal, US list price</span><strong id="cartTotal"></strong></p>
+    <button class="btn btn--solid btn--wide" type="button" id="checkout">Request order</button>
+    <p class="cart__hint">A test checkout. No payment is taken and nothing is sent.</p>
+  </div>
+</dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

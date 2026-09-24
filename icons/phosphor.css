@@ -1,0 +1,38 @@
+/* Phosphor Icons 2.1.1 (MIT), regular weight, trimmed to the 4 icons this page uses. */
+@font-face { font-family: "Phosphor"; src: url("./Phosphor.woff2") format("woff2"); font-weight: normal; font-style: normal; font-display: block; }
+.ph {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "Phosphor" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ph.ph-bag-simple:before {
+  content: "\e5e6";
+}
+.ph.ph-minus:before {
+  content: "\e32a";
+}
+.ph.ph-plus:before {
+  content: "\e3d4";
+}
+.ph.ph-x:before {
+  content: "\e4f6";
+}
